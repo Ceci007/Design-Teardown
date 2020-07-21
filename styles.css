@@ -11,15 +11,98 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px -> 1rem */
 }
 
 :root {
-    --color-primary: #c7372a;
-    --color-primary-dark: #bc3428;
+    --color-primary: #B0C7D5;
+    --color-primary-gradient: #58636a;
+    --color-primary-dark: #7d8595;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
+/* -------------------------- Navbar Styles ------------------------ */
+
+.navbar {
+    background-color: var(--color-primary);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.logo-box {
+    width: 20rem;
+    height: auto;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-item {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    margin-left: 1.5rem;
+    transition: all 0.4s;
+}
+
+.nav-item:hover,
+.item-active {
+    padding: 1rem 2rem;
+    background-color: var(--color-primary-dark);
+    border-radius: 0.4rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.item-active i {
+    color: white;
+    margin-left: 0.8rem;
+    font-size: 2.5rem;
+}
+
+.search-box {
+    position: relative;
+    z-index: 1;
+}
+
+.search-input {
+    padding: 2rem;
+    padding-left: 4rem;
+    background-color: white;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input::-webkit-input-placeholder {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(0,0,0, 0.7);
+}
+
+.search-box i {
+    font-size: 2rem;
+    color: var(--color-primary);
+    position: absolute;
+    top: 1.6rem;
+    left: 1.5rem;
+    z-index: 3;
+}
