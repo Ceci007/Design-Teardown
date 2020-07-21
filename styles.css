@@ -35,6 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
 }
 
 .logo-box {
@@ -105,4 +106,44 @@ body {
     top: 1.6rem;
     left: 1.5rem;
     z-index: 3;
+}
+
+/*-------------------------Main section----------------------------------*/
+
+.dev-description,
+.dev-description-1 {
+    flex-direction: column;
+    width: 33.3%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev-description {
+    background-image: linear-gradient(to right, var(--color-primary-gradient), var(--color-primary-dark));
+}
+
+
+.dev-description-1 {
+    background-color: var(--color-primary);
+}
+
+.dev-description-1 span {
+    background-color: white;
+    padding: 1.5rem;
+}
+
+
+.description-top {
+    flex-direction: column;
+    margin-top: -30rem;
+    margin-bottom: 25rem;
+}
+
+.description-top h1 {
+    text-align: center;
+}
+
+.title1 {
+    margin-bottom: 1rem;
 }

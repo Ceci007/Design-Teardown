@@ -1,0 +1,23 @@
+{
+  "name": "design-teardown",
+  "version": "1.0.0",
+  "description": "Design-teardown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ceci007/Design-Teardown.git"
+  },
+  "author": "Cecilia and Giordano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ceci007/Design-Teardown/issues"
+  },
+  "homepage": "https://github.com/Ceci007/Design-Teardown#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
