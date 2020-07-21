@@ -385,10 +385,12 @@ body {
     border-bottom: 0.3rem solid var(--color-primary-gradient);
 }
 
+/*------------------------Main section: Tricks-------------------------------------------------*/
+
 .tricks-section {
     background-image: linear-gradient(to right bottom, var(--color-primary-gradient), var(--color-primary-dark));
     position: relative;
-    height: 60vh;
+    height: 80vh;
 }
 
 .tricks-content {
@@ -419,4 +421,43 @@ body {
     text-align: center;
     line-height: 4.5rem;
     border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.circular-two {
+    margin-top: 5rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*----------------------------------Main section: Relevant-Persons-------------------------*/
+
+.relevant-persons {
+    width: 100%;
+    height: 90vh;
+    background-color: lightgrey;
+    padding: 5rem 0;
+}
+
+.personOfTheWeek {
+    height: 38rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-primary-gradient);
+    align-content: center;
+    padding: 5rem;
+}
+
+.picture-square {
+    height: 28rem;
+    width: 28rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    margin-right: 5rem;
+}
+
+.person-description p {
+    width: 90%;
+    
 }
