@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-    --color-primary: #B0C7D5;
+    --color-primary: #b5b9c2;
     --color-primary-gradient: #58636a;
     --color-primary-dark: #7d8595;
 }
@@ -111,7 +111,7 @@ body {
     z-index: 3;
 }
 
-/*-------------------------Main section----------------------------------*/
+/*-------------------------Main section: Developers----------------------------------*/
 
 .dev-description,
 .dev-description-1 {
@@ -218,4 +218,47 @@ body {
     font-weight: 700;
     color: white;
     margin-bottom: 3rem;
+}
+
+/*------------------Main section: posts---------------------------------*/
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.posts-container{
+    padding: 2rem 1rem;
+    background-color: lightgray;
+}
+
+.lastes-posts {
+    width: 25%;
+    height: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.lastes-posts h6 {
+    font-size: 1.4rem;
+    color: rgba(0,0,0, 0.7);
+    
+}
+
+.lastes-posts h4 {
+    font-size: 3rem;
+    width: 80%;
+}
+
+.lastes-posts span, .lastes-posts a {
+    color: rgba(0,0,0, 0.7);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.post-description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 2.8rem;
 }
