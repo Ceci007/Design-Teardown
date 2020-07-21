@@ -226,16 +226,21 @@ body {
     margin-bottom: 1rem;
 }
 
-.posts-container{
+.posts-container,
+.right-post {
     padding: 2rem 1rem;
     background-color: lightgray;
 }
 
 .lastes-posts {
     width: 25%;
-    height: 30rem;
-    padding: 1rem;
-    margin: 1rem;
+    height: 50rem;
+    padding: 3rem;
+    margin: 1.5rem;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-primary);
+    transition: all 0.4s;
 }
 
 .lastes-posts h6 {
@@ -261,4 +266,38 @@ body {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7);
     line-height: 2.8rem;
+}
+
+.arrow {
+    font-size: 3rem;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    bottom: -0.05rem;
+    left: -0.05rem;
+    transition: all 0.4s;
+}
+
+.arrow i {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary-dark);
+}
+
+.lastes-posts:hover {
+    transform: scale(1.1);
+}
+
+.lastes-posts:hover .arrow {
+    background-color: var(--color-primary-gradient);
+}
+
+.left-post {
+    flex-direction: column;
+    height: 50rem;
+    margin: 3rem;
+    background-color: var(--color-primary-gradient);
+    border-radius: 0.4rem;
 }
