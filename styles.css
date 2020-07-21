@@ -234,7 +234,7 @@ body {
 
 .lastes-posts {
     width: 25%;
-    height: 50rem;
+    height: 60rem;
     padding: 3rem;
     margin: 1.5rem;
     flex-direction: column;
@@ -296,8 +296,73 @@ body {
 
 .left-post {
     flex-direction: column;
-    height: 50rem;
-    margin: 3rem;
+    height: 60rem;
+    width: 80rem;
+    margin: 1rem 3rem 3rem 3rem;
     background-color: var(--color-primary-gradient);
     border-radius: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.left-post p {
+    width: 80%;
+}
+
+.circular {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 2.5rem;
+}
+
+.left-post h4 {
+    font-size: 3rem;
+    position: absolute;
+    top: 23rem;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.first-p {
+    position: absolute;
+    top: 28rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: white;
+}
+
+.left-post button {
+    position: absolute;
+    top: 42rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    border: none;
+    font-weight: 600;
+}
+
+.left-post button i {
+    margin-left: 1rem;
+}
+
+.second-p {
+    position: absolute;
+    top: 50rem;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.second-p a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
