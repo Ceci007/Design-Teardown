@@ -1,0 +1,25 @@
+/* -------------------------- Common Styles ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-primary: #c7372a;
+    --color-primary-dark: #bc3428;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
