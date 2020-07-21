@@ -31,11 +31,14 @@ body {
 /* -------------------------- Navbar Styles ------------------------ */
 
 .navbar {
+    width: 100%;
     background-color: var(--color-primary);
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4rem rgba(0,0,0, 0.4);
+    position: relative;
+    z-index: 1000;
 }
 
 .logo-box {
@@ -114,18 +117,20 @@ body {
 .dev-description-1 {
     flex-direction: column;
     width: 33.3%;
-    height: 80vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
 }
 
 .dev-description {
     background-image: linear-gradient(to right, var(--color-primary-gradient), var(--color-primary-dark));
+    position: relative;
 }
 
 
 .dev-description-1 {
     background-color: var(--color-primary);
+    position: relative;
 }
 
 .dev-description-1 span {
@@ -133,11 +138,34 @@ body {
     padding: 1.5rem;
 }
 
+.name-top {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    color: white;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 17rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.square {
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.4rem;
+    margin-right: 1.5rem;
+}
+
 
 .description-top {
     flex-direction: column;
-    margin-top: -30rem;
-    margin-bottom: 25rem;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .description-top h1 {
@@ -146,4 +174,48 @@ body {
 
 .title1 {
     margin-bottom: 1rem;
+}
+
+.dev-description-bts {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    align-items: center;
+}
+
+.dev-description-bts button {
+    padding: 1rem 2rem;
+    border: 0.1rem solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.4rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.dev-description h2,
+.dev-description-1 h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1.5rem;
+    width: 80%;
+    justify-content: center;
+}
+
+.hashtag-box {
+    position: absolute;
+    top: 50rem;
+    left: 10%;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.hashtag-left p,
+.hashtag-right p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 3rem;
 }
