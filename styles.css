@@ -153,8 +153,8 @@ body {
 
 .square {
     background-color: white;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 0.4rem;
     margin-right: 1.5rem;
 }
@@ -265,7 +265,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7);
-    line-height: 2.8rem;
+    line-height: 2.2;
 }
 
 .arrow {
@@ -334,7 +334,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 2.2;
     color: white;
 }
 
@@ -382,7 +382,14 @@ body {
     text-align: center;
     color: rgba(0,0,0,0.7);
     text-decoration: none;
-    border-bottom: 0.3rem solid var(--color-primary-gradient);
+    border-bottom: 0.4rem solid var(--color-primary);
+    background-color: rgba(0,0,0,0.3);
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.4rem;
+}
+
+.button-section i {
+    margin-left: 1rem
 }
 
 /*------------------------Main section: Tricks-------------------------------------------------*/
@@ -390,7 +397,7 @@ body {
 .tricks-section {
     background-image: linear-gradient(to right bottom, var(--color-primary-gradient), var(--color-primary-dark));
     position: relative;
-    height: 80vh;
+    height: 90vh;
 }
 
 .tricks-content {
@@ -419,7 +426,6 @@ body {
     font-size: 4rem;
     color: white;
     text-align: center;
-    line-height: 4.5rem;
     border-bottom: 2px solid rgba(255,255,255,0.3);
 }
 
@@ -435,7 +441,7 @@ body {
 
 .relevant-persons {
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-color: lightgrey;
     padding: 5rem 0;
 }
@@ -448,16 +454,71 @@ body {
     align-content: center;
     padding: 5rem;
 }
+.personOfTheWeek:after {
+    content: "";
+    display: block;
+    clear: left;
+} 
 
 .picture-square {
-    height: 28rem;
     width: 28rem;
+    height: 28rem;
     background-color: white;
     border-radius: 0.8rem;
     margin-right: 5rem;
+    float: left;
+}
+
+.person-description h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 3rem;
 }
 
 .person-description p {
     width: 90%;
-    
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: rgba(255,255,255,0.8);
+    font-weight: 400;
+}
+
+.pasts-weeks {
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.person-name {
+    align-items: center;
+}
+
+.person-name a,
+.person-name p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.single-person {
+    justify-content: space-between;
+    margin: 3rem 1rem;
+    padding: 3rem 5rem;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.content-right h3 {
+    margin: 3rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.content-right p {
+    font-size: 1.6rem;
+    line-height: 2.2;
+    font-weight: 400;
+    color: white;
 }
