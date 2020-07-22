@@ -559,3 +559,106 @@ body {
     right: 6rem;
     border-radius: 0.4rem;
 }
+
+/*----------------------------Main section: Framework Section ---------------------------------*/
+.frameworks-section {
+    background-color: lightgray;
+}
+
+.frameworks-top {
+    padding: 3rem 5rem;
+}
+
+.framework-card {
+    margin: 2rem;
+    padding: 3rem;
+    box-shadow: 0 0 4rem rgba(0,0,0, 0.3);
+    border-radius: 0.6rem;
+    background-color: white;
+    height: 60rem;
+    position: relative;
+}
+
+.framework-card h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    width: 60%;
+}
+
+.framework-card p {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 2.2;
+}
+
+.framework-card p span {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0, 0.6);
+}
+
+.colorfull-btn {
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+    border: none;
+    background-color: var(--color-primary);
+    font-size: 2rem;
+    border-radius: 0.4rem;
+    padding: 1.5rem 3rem;
+}
+
+.frameworks-bottom {
+    justify-content: center;
+}
+
+.framework-container {
+    margin: 2rem;
+    padding: 3rem 1rem;
+    box-shadow: 0 0 4rem rgba(0,0,0, 0.3);
+    border-radius: 0.6rem;
+    background-color: var(--color-primary-gradient);
+    width: 65rem;
+    height: 60rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.framework-container h3 {
+ font-size: 3rem;
+ border-bottom: 3px solid rgba(255,255,255, 0.4);   
+ color: white;
+ margin: 3rem 0;
+}
+
+.framework-container p {
+    font-size: 1.8rem;
+    line-height: 2.2;
+    color: white;
+    width: 90%;
+}
+
+.input {
+    align-items: center;
+    width: 95%;
+    padding: 3rem;
+    background-color: black;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+}
+
+.text {
+    align-items: center;
+    width: 80%;
+    padding: 3rem;
+    background-color: lightgray;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+}
+
+.circular-three {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 50%;
+}
