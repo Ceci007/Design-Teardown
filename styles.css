@@ -92,15 +92,15 @@ body {
   border-radius: 0.4rem;
 }
 
-.search-input:focus {
-  outline: none;
-}
-
 .search-input::-webkit-input-placeholder {
   font-family: inherit;
   font-size: 2rem;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.search-input:focus {
+  outline: none;
 }
 
 .search-box i {
@@ -141,7 +141,6 @@ body {
 .name-top {
   font-size: 2rem;
   font-weight: 700;
-  position: relative;
   color: white;
   align-items: center;
   margin-bottom: 2rem;
@@ -661,7 +660,6 @@ body {
   border-radius: 50%;
 }
 
-
 /* ----------------------------Footer----------------------------- */
 
 .footer {
@@ -702,9 +700,8 @@ body {
 .footer-ul a {
   justify-content: center;
   color: white;
-  font-size: 2.2rem !important;
+  font-size: 2.2rem;
   padding: 0 1rem 0 0;
-  font-size: 1.6rem;
   font-weight: 600;
 }
 
