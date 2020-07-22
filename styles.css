@@ -522,3 +522,40 @@ body {
     font-weight: 400;
     color: white;
 }
+
+/*----------------------------Main section: Design Systems---------------------------------*/
+
+.design-systems {
+    background-color: var(--color-primary-gradient);
+    padding: 4rem 6rem;
+    position: relative;
+}
+
+.desing-description h4 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.desing-description h3 {
+    color: white;
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.desing-description p {
+    width: 60%;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.2;
+    margin: 3rem 0;
+}
+
+.book {
+    background-color: white;
+    width: 28rem;
+    height: 35rem;
+    position: absolute;
+    top: -9rem;
+    right: 6rem;
+    border-radius: 0.4rem;
+}
