@@ -3,782 +3,779 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
 
 *,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; /* 10px -> 1rem */
+  font-size: 62.5%; /* 10px -> 1rem */
 }
 
 :root {
-    --color-primary: #b5b9c2;
-    --color-primary-gradient: #58636a;
-    --color-primary-dark: #7d8595;
+  --color-primary: #b5b9c2;
+  --color-primary-gradient: #58636a;
+  --color-primary-dark: #7d8595;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    position: relative;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 /* -------------------------- Navbar Styles ------------------------ */
 
 .navbar {
-    width: 100%;
-    background-color: var(--color-primary);
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    box-shadow: 0 0 4rem rgba(0,0,0, 0.4);
-    position: relative;
-    z-index: 1000;
+  width: 100%;
+  background-color: var(--color-primary);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1000;
 }
 
 .logo-box {
-    width: 20rem;
-    height: auto;
+  width: 20rem;
+  height: auto;
 }
 
 .logo-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .nav-item {
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding: 1rem 2rem;
-    margin-left: 1.5rem;
-    transition: all 0.4s;
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  margin-left: 1.5rem;
+  transition: all 0.4s;
 }
 
 .nav-item:hover,
 .item-active {
-    padding: 1rem 2rem;
-    background-color: var(--color-primary-dark);
-    border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary-dark);
+  border-radius: 0.4rem;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .item-active i {
-    color: white;
-    margin-left: 0.8rem;
-    font-size: 2.5rem;
+  color: white;
+  margin-left: 0.8rem;
+  font-size: 2.5rem;
 }
 
 .search-box {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .search-input {
-    padding: 2rem;
-    padding-left: 4rem;
-    background-color: white;
-    border: none;
-    border-radius: 0.4rem;
+  padding: 2rem;
+  padding-left: 4rem;
+  background-color: white;
+  border: none;
+  border-radius: 0.4rem;
 }
 
 .search-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .search-input::-webkit-input-placeholder {
-    font-family: inherit;
-    font-size: 2rem;
-    font-weight: 800;
-    color: rgba(0,0,0, 0.7);
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .search-box i {
-    font-size: 2rem;
-    color: var(--color-primary);
-    position: absolute;
-    top: 1.6rem;
-    left: 1.5rem;
-    z-index: 3;
+  font-size: 2rem;
+  color: var(--color-primary);
+  position: absolute;
+  top: 1.6rem;
+  left: 1.5rem;
+  z-index: 3;
 }
 
-/*-------------------------Main section: Developers----------------------------------*/
+/* -------------------------Main section: Developers---------------------------------- */
 
 .dev-description,
 .dev-description-1 {
-    flex-direction: column;
-    width: 33.3%;
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  width: 33.3%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .dev-description {
-    background-image: linear-gradient(to right, var(--color-primary-gradient), var(--color-primary-dark));
-    position: relative;
+  background-image: linear-gradient(to right, var(--color-primary-gradient), var(--color-primary-dark));
+  position: relative;
 }
 
-
 .dev-description-1 {
-    background-color: var(--color-primary);
-    position: relative;
+  background-color: var(--color-primary);
+  position: relative;
 }
 
 .dev-description-1 span {
-    background-color: white;
-    padding: 1.5rem;
+  background-color: white;
+  padding: 1.5rem;
 }
 
 .name-top {
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    color: white;
-    align-items: center;
-    margin-bottom: 2rem;
-    position: absolute;
-    top: 17rem;
-    left: 50%;
-    transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  color: white;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 17rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .square {
-    background-color: white;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 0.4rem;
-    margin-right: 1.5rem;
+  background-color: white;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0.4rem;
+  margin-right: 1.5rem;
 }
 
-
 .description-top {
-    flex-direction: column;
-    position: absolute;
-    top: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .description-top h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .title1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .dev-description-bts {
-    position: absolute;
-    top: 3rem;
-    right: 2rem;
-    align-items: center;
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  align-items: center;
 }
 
 .dev-description-bts button {
-    padding: 1rem 2rem;
-    border: 0.1rem solid white;
-    color: white;
-    background-color: transparent;
-    border-radius: 0.4rem;
-    margin-left: 1rem;
-    font-size: 1.6rem;
-    font-weight: 700;
+  padding: 1rem 2rem;
+  border: 0.1rem solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .dev-description h2,
 .dev-description-1 h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 1.5rem;
-    width: 80%;
-    justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  justify-content: center;
 }
 
 .hashtag-box {
-    position: absolute;
-    top: 50rem;
-    left: 10%;
-    width: 40%;
-    justify-content: space-between;
+  position: absolute;
+  top: 50rem;
+  left: 10%;
+  width: 40%;
+  justify-content: space-between;
 }
 
 .hashtag-left p,
 .hashtag-right p {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3rem;
 }
 
-/*------------------Main section: posts---------------------------------*/
+/* ------------------Main section: posts--------------------------------- */
 
 .margin-bottom {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .posts-container,
 .right-post {
-    padding: 2rem 1rem;
-    background-color: lightgray;
+  padding: 2rem 1rem;
+  background-color: lightgray;
 }
 
 .lastes-posts {
-    width: 25%;
-    height: 60rem;
-    padding: 3rem;
-    margin: 1.5rem;
-    flex-direction: column;
-    position: relative;
-    background-color: var(--color-primary);
-    transition: all 0.4s;
+  width: 25%;
+  height: 60rem;
+  padding: 3rem;
+  margin: 1.5rem;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--color-primary);
+  transition: all 0.4s;
 }
 
 .lastes-posts h6 {
-    font-size: 1.4rem;
-    color: rgba(0,0,0, 0.7);
-    
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .lastes-posts h4 {
-    font-size: 3rem;
-    width: 80%;
+  font-size: 3rem;
+  width: 80%;
 }
 
-.lastes-posts span, .lastes-posts a {
-    color: rgba(0,0,0, 0.7);
-    font-size: 1.5rem;
-    font-weight: 800;
+.lastes-posts span,
+.lastes-posts a {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+  font-weight: 800;
 }
-
 
 .post-description {
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 2.2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 2.2;
 }
 
 .arrow {
-    font-size: 3rem;
-    position: absolute;
-    width: 6rem;
-    height: 6rem;
-    bottom: -0.05rem;
-    left: -0.05rem;
-    transition: all 0.4s;
+  font-size: 3rem;
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  bottom: -0.05rem;
+  left: -0.05rem;
+  transition: all 0.4s;
 }
 
 .arrow i {
-    position: absolute;
-    top: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--color-primary-dark);
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-primary-dark);
 }
 
 .lastes-posts:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .lastes-posts:hover .arrow {
-    background-color: var(--color-primary-gradient);
+  background-color: var(--color-primary-gradient);
 }
 
 .left-post {
-    flex-direction: column;
-    height: 60rem;
-    width: 80rem;
-    margin: 1rem 3rem 3rem 3rem;
-    background-color: var(--color-primary-gradient);
-    border-radius: 0.4rem;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
+  flex-direction: column;
+  height: 60rem;
+  width: 80rem;
+  margin: 1rem 3rem 3rem 3rem;
+  background-color: var(--color-primary-gradient);
+  border-radius: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .left-post p {
-    width: 80%;
+  width: 80%;
 }
 
 .circular {
-    width: 18rem;
-    height: 18rem;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    top: 2.5rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2.5rem;
 }
 
 .left-post h4 {
-    font-size: 3rem;
-    position: absolute;
-    top: 23rem;
-    color: white;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 3rem;
+  position: absolute;
+  top: 23rem;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .first-p {
-    position: absolute;
-    top: 28rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2.2;
-    color: white;
+  position: absolute;
+  top: 28rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2;
+  color: white;
 }
 
 .left-post button {
-    position: absolute;
-    top: 42rem;
+  position: absolute;
+  top: 42rem;
 }
 
 .btn {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 0.6rem;
-    border: none;
-    font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: 600;
 }
 
 .btn i {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .second-p {
-    position: absolute;
-    top: 50rem;
-    text-align: center;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 600;
+  position: absolute;
+  top: 50rem;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .second-p a {
-    color: white;
-    text-decoration: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .button-section {
-    background-color: lightgray;
-    justify-content: center;
-    padding: 6rem 0;
+  background-color: lightgray;
+  justify-content: center;
+  padding: 6rem 0;
 }
 
 .button-section a {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgba(0,0,0,0.7);
-    text-decoration: none;
-    border-bottom: 0.4rem solid var(--color-primary);
-    background-color: rgba(0,0,0,0.3);
-    padding: 1.5rem 2.5rem;
-    border-radius: 0.4rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  border-bottom: 0.4rem solid var(--color-primary);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.4rem;
 }
 
 .button-section i {
-    margin-left: 1rem
+  margin-left: 1rem;
 }
 
-/*------------------------Main section: Tricks-------------------------------------------------*/
+/* ------------------------Main section: Tricks------------------------------------------------- */
 
 .tricks-section {
-    background-image: linear-gradient(to right bottom, var(--color-primary-gradient), var(--color-primary-dark));
-    position: relative;
-    height: 90vh;
+  background-image: linear-gradient(to right bottom, var(--color-primary-gradient), var(--color-primary-dark));
+  position: relative;
+  height: 90vh;
 }
 
 .tricks-content {
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding-top: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
 }
 
 .tricks-content p span {
-    color: white;
-    font-size: 1.6rem;
+  color: white;
+  font-size: 1.6rem;
 }
 
 .tricks-content p {
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-    font-size: 2.2rem;
-    color: white;
-    width: 50%;
-    text-align: center;
-    font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: 2.2rem;
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
 }
 
 .tricks-content h3 {
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .circular-two {
-    margin-top: 5rem;
-    height: 30rem;
-    width: 30rem;
-    background-color: white;
-    border-radius: 50%;
+  margin-top: 5rem;
+  height: 30rem;
+  width: 30rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
-/*----------------------------------Main section: Relevant-Persons-------------------------*/
+/* ----------------------------------Main section: Relevant-Persons------------------------- */
 
 .relevant-persons {
-    width: 100%;
-    height: auto;
-    background-color: lightgrey;
-    padding: 5rem 0;
+  width: 100%;
+  height: auto;
+  background-color: lightgrey;
+  padding: 5rem 0;
 }
 
 .personOfTheWeek {
-    height: 38rem;
-    width: 90%;
-    margin: 0 auto;
-    background-color: var(--color-primary-gradient);
-    align-content: center;
-    padding: 5rem;
+  height: 38rem;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--color-primary-gradient);
+  align-content: center;
+  padding: 5rem;
 }
-.personOfTheWeek:after {
-    content: "";
-    display: block;
-    clear: left;
-} 
+
+.personOfTheWeek::after {
+  content: "";
+  display: block;
+  clear: left;
+}
 
 .picture-square {
-    width: 28rem;
-    height: 28rem;
-    background-color: white;
-    border-radius: 0.8rem;
-    margin-right: 5rem;
-    float: left;
+  width: 28rem;
+  height: 28rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  margin-right: 5rem;
+  float: left;
 }
 
 .person-description h2 {
-    font-size: 2rem;
-    color: white;
-    font-weight: 400;
-    margin-bottom: 3rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
 
 .person-description p {
-    width: 90%;
-    font-size: 1.6rem;
-    line-height: 2.2;
-    color: rgba(255,255,255,0.8);
-    font-weight: 400;
+  width: 90%;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
 }
 
 .pasts-weeks {
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 3rem;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .person-name {
-    align-items: center;
+  align-items: center;
 }
 
 .person-name a,
 .person-name p {
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
 }
 
 .single-person {
-    justify-content: space-between;
-    margin: 3rem 1rem;
-    padding: 3rem 5rem;
-    background-color: rgba(0,0,0,0.3);
+  justify-content: space-between;
+  margin: 3rem 1rem;
+  padding: 3rem 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .content-right h3 {
-    margin: 3rem 0;
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
 }
 
 .content-right p {
-    font-size: 1.6rem;
-    line-height: 2.2;
-    font-weight: 400;
-    color: white;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  font-weight: 400;
+  color: white;
 }
 
-/*----------------------------Main section: Design Systems---------------------------------*/
+/* ----------------------------Main section: Design Systems--------------------------------- */
 
 .design-systems {
-    background-color: var(--color-primary-gradient);
-    padding: 4rem 6rem;
-    position: relative;
+  background-color: var(--color-primary-gradient);
+  padding: 4rem 6rem;
+  position: relative;
 }
 
 .desing-description h4 {
-    color: white;
-    font-size: 1.4rem;
+  color: white;
+  font-size: 1.4rem;
 }
 
 .desing-description h3 {
-    color: white;
-    font-size: 4rem;
-    margin: 1rem 0;
+  color: white;
+  font-size: 4rem;
+  margin: 1rem 0;
 }
 
 .desing-description p {
-    width: 60%;
-    color: white;
-    font-size: 1.4rem;
-    line-height: 2.2;
-    margin: 3rem 0;
+  width: 60%;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 2.2;
+  margin: 3rem 0;
 }
 
 .book {
-    background-color: white;
-    width: 28rem;
-    height: 35rem;
-    position: absolute;
-    top: -9rem;
-    right: 6rem;
-    border-radius: 0.4rem;
+  background-color: white;
+  width: 28rem;
+  height: 35rem;
+  position: absolute;
+  top: -9rem;
+  right: 6rem;
+  border-radius: 0.4rem;
 }
 
-/*----------------------------Main section: Framework Section ---------------------------------*/
+/* ----------------------------Main section: Framework Section --------------------------------- */
 .frameworks-section {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .frameworks-top {
-    padding: 3rem 5rem;
+  padding: 3rem 5rem;
 }
 
 .framework-card {
-    margin: 2rem;
-    padding: 3rem;
-    box-shadow: 0 0 4rem rgba(0,0,0, 0.3);
-    border-radius: 0.6rem;
-    background-color: white;
-    height: 60rem;
-    position: relative;
+  margin: 2rem;
+  padding: 3rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.6rem;
+  background-color: white;
+  height: 60rem;
+  position: relative;
 }
 
 .framework-card h3 {
-    font-size: 3rem;
-    font-weight: 800;
-    width: 60%;
+  font-size: 3rem;
+  font-weight: 800;
+  width: 60%;
 }
 
 .framework-card p {
-    margin: 2rem 0;
-    font-size: 1.6rem;
-    line-height: 2.2;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  line-height: 2.2;
 }
 
 .framework-card p span {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: rgba(0,0,0, 0.6);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .colorfull-btn {
-    position: absolute;
-    left: 3rem;
-    bottom: 3rem;
-    border: none;
-    background-color: var(--color-primary);
-    font-size: 2rem;
-    border-radius: 0.4rem;
-    padding: 1.5rem 3rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  border: none;
+  background-color: var(--color-primary);
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  padding: 1.5rem 3rem;
 }
 
 .frameworks-bottom {
-    justify-content: center;
+  justify-content: center;
 }
 
 .framework-container {
-    margin: 2rem;
-    padding: 3rem 1rem;
-    box-shadow: 0 0 4rem rgba(0,0,0, 0.3);
-    border-radius: 0.6rem;
-    background-color: var(--color-primary-gradient);
-    width: 65rem;
-    height: 60rem;
-    flex-direction: column;
-    align-items: center;
+  margin: 2rem;
+  padding: 3rem 1rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.6rem;
+  background-color: var(--color-primary-gradient);
+  width: 65rem;
+  height: 60rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .framework-container h3 {
- font-size: 3rem;
- border-bottom: 3px solid rgba(255,255,255, 0.4);   
- color: white;
- margin: 3rem 0;
+  font-size: 3rem;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  margin: 3rem 0;
 }
 
 .framework-container p {
-    font-size: 1.8rem;
-    line-height: 2.2;
-    color: white;
-    width: 90%;
+  font-size: 1.8rem;
+  line-height: 2.2;
+  color: white;
+  width: 90%;
 }
 
 .input {
-    align-items: center;
-    width: 95%;
-    padding: 3rem;
-    background-color: black;
-    margin-top: 2rem;
-    border-radius: 0.6rem;
+  align-items: center;
+  width: 95%;
+  padding: 3rem;
+  background-color: black;
+  margin-top: 2rem;
+  border-radius: 0.6rem;
 }
 
 .text {
-    align-items: center;
-    width: 80%;
-    padding: 3rem;
-    background-color: lightgray;
-    margin-top: 2rem;
-    border-radius: 0.6rem;
+  align-items: center;
+  width: 80%;
+  padding: 3rem;
+  background-color: lightgray;
+  margin-top: 2rem;
+  border-radius: 0.6rem;
 }
 
 .circular-three {
-    width: 15rem;
-    height: 15rem;
-    background-color: white;
-    border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 
-/*----------------------------Footer-----------------------------*/
+/* ----------------------------Footer----------------------------- */
 
 .footer {
-    background-color: var(--color-primary-gradient);
-    padding: 7rem 6rem;
-    height: 60rem;
-    margin-bottom: -5rem;
+  background-color: var(--color-primary-gradient);
+  padding: 7rem 6rem;
+  height: 60rem;
+  margin-bottom: -5rem;
 }
 
 .footer-top {
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-title {
-    color: white;
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
 
 .footer-ul {
-    list-style: none;
-    flex-wrap: wrap;
-    width: 60%;
-    justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;
 }
 
 .footer-ul i {
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 .footer-ul li {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.footer-ul a{
-    justify-content: center;
-    color: white;
-    font-size: 2.2rem !important;
-    padding: 0 1rem 0 0;
-    font-size: 1.6rem;
-    font-weight: 600;
+.footer-ul a {
+  justify-content: center;
+  color: white;
+  font-size: 2.2rem !important;
+  padding: 0 1rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .footer-top-p {
-    color: white;
-    width: 27%;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    text-align: center;
-    line-height: 2.2;
+  color: white;
+  width: 27%;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 2.2;
 }
 
 .footer-top-p a {
-    color: white;
+  color: white;
 }
 
 .footer-bottom {
-    position: relative;
-    height: 18rem;
-    padding-top: 2rem;
-
+  position: relative;
+  height: 18rem;
+  padding-top: 2rem;
 }
 
 .footer-bottom-first {
-    width: 50rem;
-    height: 6rem;
-    background-color: var(--color-primary);
-    margin-bottom: 1rem;
+  width: 50rem;
+  height: 6rem;
+  background-color: var(--color-primary);
+  margin-bottom: 1rem;
 }
 
 .footer-bottom-second {
-    width: 40rem;
-    height: 6rem;
-    background-color: var(--color-primary);
-    bottom: 1rem;
+  width: 40rem;
+  height: 6rem;
+  background-color: var(--color-primary);
+  bottom: 1rem;
 }
 
-.footer-bottom-first, .footer-bottom-second {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.footer-bottom-first,
+.footer-bottom-second {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .circular-four {
-    position: absolute;
-    left: 30rem !important;
-    bottom: 2rem;
-    width: 15rem;
-    height: 15rem;
-    background-color: white;
-    border-radius: 50%;
+  position: absolute;
+  left: 30rem !important;
+  bottom: 2rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .arrow-square {
-    width: 5rem;
-    height: 5rem;
-    background-color: grey;
-    opacity: 0.6;
-    position: sticky;
-    left: calc(100% - 7rem);
-    bottom: 3rem;
-    text-align: center;
-    border-radius: 0.4rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: grey;
+  opacity: 0.6;
+  position: sticky;
+  left: calc(100% - 7rem);
+  bottom: 3rem;
+  text-align: center;
+  border-radius: 0.4rem;
 }
 
 .arrow-square i {
-    font-size: 4rem;
-    margin-top: 0.5rem;
-    color: white;
+  font-size: 4rem;
+  margin-top: 0.5rem;
+  color: white;
 }
 
 .arrow-square:hover {
-    opacity: 1;
+  opacity: 1;
 }
