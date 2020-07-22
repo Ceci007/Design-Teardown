@@ -22,6 +22,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
+    position: relative;
 }
 
 .flex {
@@ -661,4 +662,123 @@ body {
     height: 15rem;
     background-color: white;
     border-radius: 50%;
+}
+
+
+/*----------------------------Footer-----------------------------*/
+
+.footer {
+    background-color: var(--color-primary-gradient);
+    padding: 7rem 6rem;
+    height: 60rem;
+    margin-bottom: -5rem;
+}
+
+.footer-top {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.footer-ul {
+    list-style: none;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+}
+
+.footer-ul i {
+    padding-right: 1rem;
+}
+
+.footer-ul li {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-ul a{
+    justify-content: center;
+    color: white;
+    font-size: 2.2rem !important;
+    padding: 0 1rem 0 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-top-p {
+    color: white;
+    width: 27%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2.2;
+}
+
+.footer-top-p a {
+    color: white;
+}
+
+.footer-bottom {
+    position: relative;
+    height: 18rem;
+    padding-top: 2rem;
+
+}
+
+.footer-bottom-first {
+    width: 50rem;
+    height: 6rem;
+    background-color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.footer-bottom-second {
+    width: 40rem;
+    height: 6rem;
+    background-color: var(--color-primary);
+    bottom: 1rem;
+}
+
+.footer-bottom-first, .footer-bottom-second {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circular-four {
+    position: absolute;
+    left: 30rem !important;
+    bottom: 2rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.arrow-square {
+    width: 5rem;
+    height: 5rem;
+    background-color: grey;
+    opacity: 0.6;
+    position: sticky;
+    left: calc(100% - 7rem);
+    bottom: 3rem;
+    text-align: center;
+    border-radius: 0.4rem;
+}
+
+.arrow-square i {
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.arrow-square:hover {
+    opacity: 1;
 }
