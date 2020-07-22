@@ -15,7 +15,7 @@
 
 ## 🔴 Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Ceci007/Design-Teardown/tree/feature-branch)
+[Live Demo Link](https://raw.githack.com/Ceci007/Design-Teardown/feature-branch/index.html)
 
 
 ## 🛠 Getting Started
